@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const pessoa = {
+            nome: "Ana",
+            idade: 16,
+            email: "ana@gmail.com"
+        };
+        function definirPropriedade(obj, chave, valor) {
+            obj[chave] = valor;
+        }
+        definirPropriedade(pessoa, "endereco", "Rua das Flores, 123");
+        console.log(pessoa);
+    </script>
+    
+</body>
+</html>

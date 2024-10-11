@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const pessoa = {
+        nome: "Ana",
+        idade: 16,
+        email: "anagmail.com"
+    };
+
+    function temPropriedade(obj, chave) {
+        return chave in obj;
+    }
+
+    const resultado = temPropriedade(pessoa, "idade");
+    alert(`A pessoa tem a propriedade "idade"? ${resultado}`); 
+
+    const resultadoInvalido = temPropriedade(pessoa, "endereco");
+    alert(`A pessoa tem a propriedade "endereco"? ${resultadoInvalido}`); 
+
+    </script>
+</body>
+</html>
